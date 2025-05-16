@@ -1,0 +1,24 @@
+body{
+    background-color: bisque;
+    margin:5rem;
+    text-align: center;
+}
+
+button{
+    margin:4px;
+    padding:6px;
+}
+.user-input{
+    box-sizing: border-box;
+    padding: 8px;
+    width:20rem;
+    text-decoration-color: black;
+    font-size: xx-large;
+}
+.start-game:disabled{
+    cursor: not-allowed;
+}
+
+
+
+
