@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Transformation</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <main>
+    
+        <input type="text"placeholder="enter the sentence with spaces (alphanumeric) " value="this is a normal sentence to transform">
+    </main>
+      <div class="transformers">
+      <div id="lowercase">
+        <label>Lower Case</label>
+        <span ></span>
+      </div>
+      <div id="uppercase">
+        <label>Upper Case</label>
+        <span ></span>
+      </div>
+      <div id="camelcase">
+        <label>Camel Case</label>
+        <span ></span>
+      </div>
+      <div id="pascalcase">
+        <label>Pascal Case</label>
+        <span ></span>
+      </div>
+      <div id="snakecase">
+        <label>Snake Case</label>
+        <span ></span>
+      </div>
+      <div id="kebabcase">
+        <label>Kebab Case</label>
+        <span ></span>
+      </div>
+      <div id="Trimcase">
+        <label>Trim</label>
+        <span ></span>
+      </div>
+    </div>
+    <challenge-modal>
+        <div id="instructionModal" class="modal">
+            <div class="modal-content"></div>
+            <div class="modal-header">
+                <h2 class="moda-title"id="modalTitle"></h2>
+                <span class="close-modal"></span>
+            </div>
+            <div class="modal-body">
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+    </challenge-modal>
+    <script src="app.js"></script>
+</body>
+</html>

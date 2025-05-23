@@ -1,0 +1,49 @@
+*{
+    box-sizing: inherit;
+}
+body{
+    text-align: center;
+    font-family: 'Roboto',sans-serif;
+}
+
+
+
+input {
+    width: 94%;
+    margin-bottom: 1rem;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+}
+.modal-content .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+main{
+    max-width: 1200px;
+    margin:auto;
+}
+
+.transformers {
+    width: 94%;
+    text-align: left;
+    margin: auto;
+}
+.transformers label {
+    font-size: .75rem;
+    position: absolute;
+    top: -.75rem;
+    left: 1rem;
+    background-color: #000;
+    color: #fff;
+    padding: .25rem;
+}
+
+.transformers div {
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background-color: beige;
+    position: relative;
+}
