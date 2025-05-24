@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    text-align: center;
+    font-family: sans-serif;
+  }
+  .container {
+    width: 90%;
+    margin: auto;
+    padding-top: 40px;
+  }
+  .display {
+    margin-top: 20px;
+  }
+  .slot {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    font-size: 24px;
+    text-align: center;
+  }
+  
