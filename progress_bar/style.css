@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  text-align: center;
+  background-color: bisque;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+.progress-container {
+  width: 100%;
+  max-width: 600px;
+  height: 30px;
+  background-color: #eee;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  border: 1px solid #ccc;
+}
+
+.progress {
+  width: 0%;
+  height: 100%;
+  background-color: #98b899;
+  transition: width 0.05s linear;
+}
+
+.container button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  
+}
+
