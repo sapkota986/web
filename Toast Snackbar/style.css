@@ -1,0 +1,98 @@
+:root {
+    --normal-bg: #fff;
+    --normal-border: #ccc;
+    --normal-text: #000;
+  
+    --success-bg: hsl(143, 85%, 96%);
+    --success-border: hsl(145, 92%, 91%);
+    --success-text: hsl(140, 100%, 27%);
+  
+    --error-bg: hsl(359, 100%, 97%);
+    --error-border: hsl(359, 100%, 94%);
+    --error-text: hsl(360, 100%, 45%);
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 2rem;
+  }
+  
+  form {
+    margin: 0 auto 2rem auto;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  input,
+  select,
+  button {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .toast-container {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    z-index: 9999;
+  }
+  
+  .toast {
+    background: var(--normal-bg);
+    color: var(--normal-text);
+    border: 1px solid var(--normal-border);
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeIn 0.3s ease forwards;
+  }
+  
+  .toast.success {
+    background: var(--success-bg);
+    color: var(--success-text);
+    border-color: var(--success-border);
+  }
+  
+  .toast.error {
+    background: var(--error-bg);
+    color: var(--error-text);
+    border-color: var(--error-border);
+  }
+  
+  .toast button.remove {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .fade-out {
+    animation: fadeOut 0.3s forwards;
+  }
+  
+  @keyframes fadeOut {
+    to {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+  }
+  
